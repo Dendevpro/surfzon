@@ -1,5 +1,6 @@
  # SurfZon ![dolphin-icon](https://img.icons8.com/nolan/64/000000/dolphin-logo.png)
 SurfZon is an e-commerce web application that takes orders from customers and depletes stock from the store's inventory.
+
 - - - 
 ## Tools
 A `MySQL Database` stores the information about the inventory to feed the `Node.js` application that takes orders in and process the transactions.
@@ -18,19 +19,24 @@ Running this application will first display all the items available for sale wit
 ### Watch Demo!
 **Questions**
 
-_What is the product's id?
+_- What is the product's id?_
+
 ![id](Gifs/Prompt-ID.gif)
 
-_How many units do you want to buy?
+_- How many units do you want to buy?_
+
 ![quantity](Gifs/Prompt-Quantity.gif)
 
 **Transaction**
 
-If available in stock
-![total](Gifs/Show-Total.gif)
+If not available in stock
+
+![msg](Gifs/Log-Message.gif)
 
 Otherwise
-![msg](Gifs/Log-Message.gif)
+
+![total](Gifs/Show-Total.gif)
+
 - - - 
 ## Project Built With
 **_JavaScript_**  |  **_MySQL_**  |  **_Node.js_**
