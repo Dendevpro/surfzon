@@ -1,5 +1,5 @@
- # ![dolphin-icon](https://img.icons8.com/nolan/64/000000/dolphin-logo.png) SurfZon
-SurfZon is an E-commerce web application that takes orders from customers and depletes stock from the store's inventory.
+ # SurfZon ![dolphin-icon](https://img.icons8.com/nolan/64/000000/dolphin-logo.png)
+SurfZon is an e-commerce web application that takes orders from customers and depletes stock from the store's inventory.
 - - - 
 ## Tools
 A `MySQL Database` stores the information about the inventory to feed the `Node.js` application that takes orders in and process the transactions.
