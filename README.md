@@ -1,4 +1,4 @@
-# SurfZon ![dolphin-icon](https://img.icons8.com/nolan/64/000000/dolphin-logo.png)
+ # ![dolphin-icon](https://img.icons8.com/nolan/64/000000/dolphin-logo.png) SurfZon ![dolphin-icon](https://img.icons8.com/nolan/64/000000/dolphin-logo.png)
 SurfZon is an E-commerce web application that takes orders from customers and depletes stock from the store's inventory.
 - - - 
 ## Tools
