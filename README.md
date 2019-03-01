@@ -13,10 +13,11 @@ Running this application will first display all the items available for sale wit
     * Price 
     * Quantity in stock
     
-`Nodejs` asks the customer for the product's **Id** and the **Quantity** they want to purchase. Based on the inventory stored at the `MySQL Database` the app will get the customer's input and show the **Total Cost** of the items. If not in stock the message _"Item is not available"_ will be displayed and the order will be canceled. Note that at every transaction the database keeps the information up to date. 
+`Nodejs` asks the customer for the product's **Id** and the **Quantity** they want to purchase. Based on the inventory stored at the `MySQL Database` the app will get the customer's input and show the **Total Cost** of the items. If not in stock the message **_"Item is not available"_** will be displayed and the order will be canceled. Note that at every transaction the database keeps the information up to date. 
 
 ### Watch Demo!
-**Questions** 
+**Questions**
+
 _What is the product's id?
 ![id](Gifs/Prompt-ID.gif)
 
@@ -24,6 +25,7 @@ _How many units do you want to buy?
 ![quantity](Gifs/Prompt-Quantity.gif)
 
 **Transaction**
+
 If available in stock
 ![total](Gifs/Show-Total.gif)
 
