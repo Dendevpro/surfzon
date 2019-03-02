@@ -1,0 +1,23 @@
+{
+  "name": "surfzon",
+  "version": "1.0.0",
+  "description": "(An Amazon-like storefront that takes in orders from customers and depletes stock from the store's inventory)",
+  "main": "surfzon.js",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dendevpro/surfzon.git"
+  },
+  "author": " <dendevpro@gmail.com> (Mauro Facciolla)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dendevpro/surfzon/issues"
+  },
+  "homepage": "https://github.com/Dendevpro/surfzon#readme"
+}
