@@ -39,4 +39,4 @@ Otherwise
 
 - - - 
 ## Project Built With
-**_JavaScript_**  |  **_MySQL_**  |  **_Node.js_**
+**_JavaScript_**  |  **_MySQL_**  |  **_Node.js_**  |  **_Inquirer_** 
