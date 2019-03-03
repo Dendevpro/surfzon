@@ -3,18 +3,12 @@ SurfZon is an e-commerce web application that takes orders from customers and de
 
 - - - 
 ## Tools
-A `MySQL Database` stores the information about the inventory to feed the `Node.js` application that takes orders in and process the transactions.
+A **`Node.js`** application making use of the **`Inquirer.js`** takes orders from users and process the transactions. The inventory information is stored in a **`MySQL Database`** that feeds data to the app.
 
 ## Mechanics
-Running this application will first display all the items available for sale with attributes as follows:
-
-    * Id
-    * Name
-    * Department
-    * Price 
-    * Quantity in stock
+Running this application will first display all the items available for sale with attributes as __Id__, __Name__, __Department__, __Price__ and __Quantity in Stock__.
     
-`Nodejs` asks the customer for the product's **Id** and the **Quantity** they want to purchase. Based on the inventory stored at the `MySQL Database` the app will get the customer's input and show the **Total Cost** of the items. If not in stock the message **_"Item is not available"_** will be displayed and the order will be canceled. Note that at every transaction the database keeps the information up to date. 
+The app asks the user/customer for the product's **Id** and the **Quantity** they want to purchase. Based on the inventory stored at the database the app will get the customer's input and show the **Total Cost** of the items. If not in stock the message **_"Item is not available"_** will be displayed to the user/customer and the order will be canceled. Note that at every transaction the database keeps the information up to date. 
 
 ### Watch Demo!
 **Questions**
