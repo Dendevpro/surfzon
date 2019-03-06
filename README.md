@@ -34,6 +34,6 @@ Otherwise
 - - - 
 ## Project Built With
 
-```js
+```
 <a href="https://www.javascript.com/" target="_blank"><button>Javascript</button></a> | <a href="https://www.mysql.com/" target="_blank"><button>MySQL</button></a> | <a href="https://www.nodejs.org/" target="_blank"><button>Node.js</button></a> | <a href="https://www.npmjs.com/package/inquirer/" target="_blank"><button>Javascript</button></a>
 ```
