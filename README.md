@@ -1,4 +1,4 @@
- # SurfZon ![dolphin-icon](https://img.icons8.com/nolan/64/000000/dolphin-logo.png)
+# SurfZon ![dolphin-icon](https://img.icons8.com/nolan/64/000000/dolphin-logo.png)
 SurfZon is an e-commerce web application that takes orders from customers and depletes stock from the store's inventory.
 
 - - - 
@@ -34,5 +34,5 @@ Otherwise
 - - - 
 ## Project Built With
 
-`<a href="https://www.javascript.com/" target="_blank"><button>Javascript</button></a>` | `<a href="https://www.mysql.com/" target="_blank"><button>MySQL</button></a>` | `<a href="https://www.nodejs.org/" target="_blank"><button>Node.js</button></a>` | `<a href="https://www.npmjs.com/package/inquirer/" target="_blank"><button>Javascript</button></a>`
+<a href="https://www.javascript.com/" target="_blank"><button>Javascript</button></a> | <a href="https://www.mysql.com/" target="_blank"><button>MySQL</button></a> | <a href="https://www.nodejs.org/" target="_blank"><button>Node.js</button></a> | <a href="https://www.npmjs.com/package/inquirer/" target="_blank"><button>Javascript</button></a>
 
