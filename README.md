@@ -32,6 +32,7 @@ Otherwise
 ![total](Gifs/Show-Total.gif)
 
 - - - 
-##Project Built With
+## Project Built With
+
 **`JavaScript`**  |  **`MySQL`**  |  **`Node.js`**  |  **`Inquirer.js`** 
 
