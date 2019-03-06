@@ -33,7 +33,5 @@ Otherwise
 
 - - - 
 ##Project Built With
-
-<summary></summary>
-**_JavaScript_**  |  **_MySQL_**  |  **_Node.js_**  |  **_Inquirer_** 
+**`JavaScript`**  |  **`MySQL`**  |  **`Node.js`**  |  **`Inquirer.js`** 
 
