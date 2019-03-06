@@ -32,7 +32,7 @@ Otherwise
 ![total](Gifs/Show-Total.gif)
 
 - - - 
-<details> <summary><h1>Project Built With</h1></summary>
-
+##Project Built With
+<details> <summary></summary>
 **_JavaScript_**  |  **_MySQL_**  |  **_Node.js_**  |  **_Inquirer_** 
  </details>
