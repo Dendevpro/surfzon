@@ -4,7 +4,10 @@
   "description": "(An Amazon-like storefront that takes in orders from customers and depletes stock from the store's inventory)",
   "main": "surfzon.js",
   "dependencies": {
-    "mysql": "^2.16.0"
+    "cli-table": "^0.3.1",
+    "express": "^4.16.4",
+    "inquirer": "^6.2.2",
+    "mysql": "github:mysqljs/mysql"
   },
   "devDependencies": {},
   "scripts": {
