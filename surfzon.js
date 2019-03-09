@@ -15,7 +15,7 @@ var connection = mysql.createConnection({
     user: 'root',
 
     // Password
-    password: 'mf081030',
+    password: '',
     database: 'surfzon_db'
 });
 
