@@ -30,7 +30,7 @@ connection.connect(function (err) {
 function displayTable() {
     // Select all data from products table @ database
     connection.query('SELECT * FROM products', function (err, res) {
-        // Create a "new Table" to display the inventory
+        // Create a "new Table" to display the inventory stored at the database table
         var table = new Table({
             head: ['Item ID', 'Product Name', 'Department', 'Price'],
             colWidths: [10, 30, 20, 10]
@@ -40,6 +40,7 @@ function displayTable() {
             table.push([res[i].item_id, res[i].product_name, res[i].department, res[i].price]);
         }
 
+        // Display table on terminal
         console.log(`\n` + table.toString() + `\n`);
         promptCustomer(); // Prompt the user to start shopping
     });
@@ -65,36 +66,53 @@ function promptCustomer() {
         {
             type: 'input',
             name: 'item_id',
-            message: 'Please enter the ID of the product you would like to purchase.',
+            message: 'Please enter the ID of the product you would like to purchase = ',
             validate: validateInput,
             filter: Number
         },
         {
             type: 'input',
             name: 'quantity',
-            message: 'Enter the number of items you would like to purchase?',
+            message: 'Enter the number of items you would like to purchase = ',
             validate: validateInput,
             filter: Number
         }
+        // Then take in the user input
     ]).then(function (userInput) {
 
         var item = userInput.item_id;
         var quantity = userInput.quantity;
 
+        // Select the requested information from the database table = "item_id"
         connection.query('SELECT * FROM products WHERE ?', { item_id: item }, function (err, res) {
             if (err) throw err;
 
+            // If there is enough products in stock,
             if (quantity <= res[0].quantity) {
-                console.log(quantity + " " + res[0].product_name + " was added to your cart");
-                updateInventory();
-                checkout();
 
+                // add products to the cart and display the total
+                console.log(`\n` + quantity + " " + res[0].product_name + " added to your cart.");
+                console.log("-----------------------------------------" + `\n`);
+                console.log("Your Total is $" + res[0].price * quantity + `\n`);
+                // then update the inventory
+                updateInventory();
+
+                // Asks user if wants to continue shopping (incomplete)
+                // keepShopping();
+
+                // INCOMPLETE TASK
+                // checkout();
+
+                // End the database connection
+                connection.end();
+
+                // If there is not enough products in stock
             } else {
-                console.log('Sorry, there is only ' + res[0].quantity + " " + 'in stock, please modify your order.');
+                console.log(`\n` + '==> Sorry, there is only ' + res[0].quantity + " " + res[0].product_name + ' in stock, please modify your order.' + `\n`);
                 displayTable();
             }
             function updateInventory() {
-                // Construct the updating query string
+                // Query to update the inventory
                 var updateInventory = 'UPDATE products SET quantity = ' + (res[0].quantity - quantity) + ' WHERE item_id = ' + item;
 
                 // Update the inventory
@@ -102,6 +120,9 @@ function promptCustomer() {
                     if (err) throw err;
                 })
             }
+            // Functions to handle nicer shopping experience such as keep shopping and checkout interaction (incomplete)
+            // function checkout() {
+            // }
         })
     })
 }
